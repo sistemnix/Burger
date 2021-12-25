@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex; /*элемент ведется как блочный и 
+    выкладывает содержимое согласно флекс-модели.*/
+    justify-content: space-between; /*флексы распределяются по всей строке.
+    первый и последний элемент прижимаются к соответсвующиим краям контейнера.*/
+
+}
+
+.text {
+    color: #FAF9F9;
+    flex: 0 0 580px; /*ограничения блока по размеру*/
+    padding-top: 170px;
+    padding-bottom: 170px;
+
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 120px; /*межстрочный интервал*/
+    margin-bottom: 40px;
+}
+
+h1 span {
+    color: #FBB731;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    display: block;/*Элемент показывается как блочный. 
+    Применение этого значения для строчных элементов, 
+    например <span>, заставляет его вести подобно блокам — 
+    происходит перенос строк в начале и в конце содержимого.*/
+    margin-bottom: 10px;
+}
+
+p {
+    color: #DEDEDE;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 42px;
+
+}
+a {
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none; /*убирает подчеркивание ссылок*/
+    padding: 20px 45px; /*отсутпы внутри блока*/
+    text-transform: uppercase;
+    display: inline-block; /*то значение генерирует блочный элемент, 
+    который обтекается другими элементами веб-страницы подобно 
+    строчному элементу. Фактически такой элемент по своему 
+    действию похож на встраиваемые элементы (вроде <img>). 
+    При этом его внутренняя часть форматируется как блочный 
+    элемент, а сам элемент — как строчный.*/
+    font-size: 14px;
+}
+
+.visual {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative; /*Относительное позиционирование. 
+    Положение элемента устанавливается относительно его 
+    исходного места. Добавление свойств left, top, right 
+    и bottom изменяет позицию элемента и сдвигает его в ту 
+    или иную сторону от первоначального расположения.*/
+}
+
+.bg {
+    width: 432px;
+    height: 100%;
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+}
+
+img {
+    width: 829px;
+    position: absolute; /**/
+    right: -168px; /*Относительно правого края*/
+    
+}
